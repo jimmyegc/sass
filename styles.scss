@@ -1,0 +1,54 @@
+@import "menu";
+
+$colorbg: salmon;
+$widthH1: 200px;
+$w2: $widthH1 + 20px;
+
+@mixin fontStyle($color, $fontSize) {
+  font-size: $fontSize;
+  color: white;
+  background-color: $color;
+  text-transform: uppercase;
+}
+
+body {
+  background-color: $colorbg;
+}
+
+h2 {
+  color: $colorbg;
+  background-color: white;
+  padding: 15px;
+  width: $widthH1;
+}
+
+p {
+  width: $w2;
+}
+
+h1 {   
+  @include fontStyle(red, 40px);
+}
+
+p {
+  @include fontStyle(yellow, 19);
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+section {
+  float: left;
+  width: 200px / 600px * 100%;
+  height: 400px;
+  background-color: darkkhaki;
+}
+
+aside {
+  float: left;
+  width: 400px  / 600px * 100%;
+  height: 400px;
+  background-color: darkturquoise;
+}
