@@ -1,0 +1,10 @@
+h1 {
+  text-align: center;
+}
+
+.rojo {
+  /* background-color: firebrick; */
+  color: white;  
+  border: 5px solid wheat;
+}
+

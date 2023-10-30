@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>  
+  <style>
+    
+    @import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+
+
+    h1 {
+      color: #ef476f;
+      text-align: center;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 2px #ced4da;
+    }
+
+    .caja {
+      padding: 5px;
+      width: 40%;
+      height: 80px;
+      border-radius: 5px;
+      color: white;
+      text-align: center;
+      margin: 10px;
+      font-size: 20px;
+      float: left;
+    }
+
+    .caja.serif {
+      background-color: #5a189a;
+    }
+    .fuente_times {
+      font-family: 'Times New Roman', Times, serif;
+      font-style: italic;
+    }
+    .fuente_georgia {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-style: italic;
+      font-size: 2vh;
+    }
+
+    .caja.sans-serif {
+      background-color: #00b4d8;
+    }
+    .fuente_arial {
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: italic;
+      font-weight: bolder;
+      font-size: 1em; /* 20px/16 = 2.5em, 16px/16 = 1em */
+    }
+    .fuente_verdana {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: 200;
+    }
+
+    .caja.monospace {
+      background-color: #f15bb5;
+    }
+    .fuente_courier {
+      font-family: 'Courier New', Courier, monospace;
+      font-variant: small-caps;
+      font-size: 2vw; /* view width (viewport) 1vw = 1% */
+    }
+    .fuente_lucida {
+      font-family: 'Lucida Handwriting', cursive;
+      font-variant: normal;
+      font-size: 25px;
+    }
+
+    .caja.cursiva {
+      background-color: #ff8500;
+    }
+    
+    .caja.google {
+      background-color: hsl(66, 95%, 49%);
+    }
+
+    .fuente_sofia {
+      /*font-family: 'Sofia', cursive;
+      font-variant: normal;
+      font-size: 25px; */
+      color: #000;
+      font: normal bolder 20px 'Sofia', cursive;
+      /* font: font-style|font-variant|font-weight|font family */
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Fuentes en CSS</h1>
+  <div class="caja serif fuente_times">
+    <p>Times New Roman (serif)</p>
+  </div>
+  <div class="caja serif fuente_georgia">
+    <p>Fuente Georgia (serif)</p>
+  </div>
+  <div class="caja sans-serif fuente_arial">
+    <p>Fuente Arial (sans-serif)</p>
+  </div>
+  <div class="caja sans-serif fuente_verdana">
+    <p>Fuente Verdana (sans-serif)</p>
+  </div>
+  <div class="caja monospace fuente_courier">
+    <p>Courier New (monospace)</p>
+  </div>
+  <div class="caja cursiva fuente_lucida">
+    <p>Lucida Handwriting (monospace)</p>
+  </div>
+  <div class="caja google fuente_sofia">
+    <p>Fuente Google Sofia</p>
+  </div>
+</body>
+</html>
