@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overflow</title>
+  <style>
+    h1 {
+      text-align: center;
+      color: crimson;
+    }
+    div.contenedor {
+      position: relative;
+      border: 3px dashed greenyellow;
+      width: 30%;
+      height: 50px;
+      margin: auto;
+      /* overflow: visible; */
+      /*  overflow: hidden; */
+      /* overflow: scroll; */
+      overflow: auto;
+    }
+
+    div.container {
+      width: 30%;
+      height: 100px;
+      overflow: auto;
+    }
+
+    div.container.flotado {
+      float: left;
+    }
+
+    div.container.flotado.contenedor1 {
+      border: 3px dashed greenyellow;
+    }
+    div.container.flotado.contenedor2 {
+      border: 3px dashed cornflowerblue;
+      float: right;
+    }
+    div.container.contenedor3 {
+      clear: both;
+      border: 3px dashed darkorange;
+      margin: auto;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Overflow en CSS</h1>
+  <div class="container flotado contenedor1">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto eius quibusdam quos amet nobis reiciendis fuga blanditiis obcaecati accusantium, similique quo tempora ipsum beatae dicta corporis veniam velit voluptatum pariatur.
+  </div>
+
+  <div class="container flotado contenedor2">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sit voluptate dolorum illum eveniet architecto reprehenderit, totam quibusdam, aut quas minima tempora tempore vitae nisi saepe ad deleniti sapiente magnam.
+  </div>
+  <div class="container contenedor3">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sit voluptate dolorum illum eveniet architecto reprehenderit, totam quibusdam, aut quas minima tempora tempore vitae nisi saepe ad deleniti sapiente magnam.
+  </div>
+</body>
+</html>

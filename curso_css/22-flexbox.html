@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+  <style>
+     h1 {
+      text-align: center;
+      color: crimson;
+    }
+    .contenedor {
+      display: flex;
+      /* flex-wrap: wrap; */
+      /* flex-flow: row wrap; */
+      /* flex-direction: column; */
+      /* flex-direction: column-reverse; */
+      /* flex-direction: row-reverse; */
+      background-color: #560bad;
+      border: 1px solid blue;
+      flex-flow: row wrap;
+      justify-content: center;
+      height: 340px;
+      /* align-items: flex-start; */
+      align-items: center;
+      align-content: center;
+    }
+    .contenedor > p {
+      background-color: #4895ef;
+      color: #f1faee;
+      margin: 20px;
+      padding: 15px;
+      font-size: 1.5em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Flexbox en CSS</h1>
+  <div class="contenedor">
+    <p style="order:2; flex-grow: 1;">Texto 1</p>
+    <p style="order:3; flex-grow: 1;">Texto 2</p>
+    <p style="order:1; flex-grow: 10;">Texto 3</p>
+   <!--  <p>Texto 4</p>
+    <p>Texto 5</p>
+    <p>Texto 6</p> -->
+  </div>  
+</body>
+</html>

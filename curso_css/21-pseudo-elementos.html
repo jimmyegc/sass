@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Elementos</title>
+  <style>
+     h1 {
+      text-align: center;
+      color: crimson;
+    }
+    .contenedor {
+      width: 30%;
+      height: 20%;
+      margin: auto;      
+      border: 3px solid #a8dadc;
+      padding: 15px;
+      color: #457b9d;
+      text-align: center;
+    }
+    .contenedor p::selection {
+      color: red;
+      background-color: yellow;
+    }
+    .contenedor p::first-line {
+      font-variant: small-caps;
+      color: red;
+    }
+    .contenedor p::first-letter {
+      font-size: 1.5em;
+    }
+    .contenedor p::before {
+      content: "- ";
+    }
+    .contenedor p::after {
+      content: " -";
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Pseudo elementos en CSS</h1>
+  <div class="contenedor">
+    <p>Selecciona el texto</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus unde quae cupiditate vero veritatis at sit animi odio, quam aut hic sint quis repellat eius suscipit vitae aperiam et possimus.
+    Deserunt provident aliquid tempore ea aut sunt animi facilis vero consectetur magnam quibusdam magni alias, culpa corrupti illum doloremque consequuntur! Sint velit, ratione voluptatem voluptates dicta tempore cupiditate dolorem minus!</p>
+  </div>
+  <p>Segundo parrafo</p>
+</body>
+</html>

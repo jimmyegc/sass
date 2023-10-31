@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centrar Elementos Div</title>
+  <style>
+    h1 { 
+      text-align: center;
+      color: crimson;
+    }
+    div {
+      max-width: 50%;
+      border: 3px solid firebrick;
+      margin: 0 auto;
+    }
+    .static {
+      position: static;
+      max-width: 50%;
+      border: 3px solid firebrick;
+      margin: 0 auto;
+    }
+    .relative {
+      position: relative;
+      left: 50px;
+      top: 100px;
+      max-width: 50%;
+      border: 3px solid firebrick;
+      margin: 0 auto;
+    }
+    .fixed {
+      position: fixed;
+      left: 20px;
+      top: 20px;
+      border: 3px solid firebrick;
+    }
+    .absolute {
+      position: absolute;      
+      bottom: 0px;
+      right: 0px;
+      top: 100px;
+      max-width: 50%;
+      border: 3px solid firebrick;
+      margin: 0 auto;
+    }
+    .sticky {
+      position: sticky;      
+      position: -webkit-sticky;
+      top: 50px;
+      max-width: 50%;
+      border: 3px solid firebrick;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>Centrar Elementos Div</h1>
+  <div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure accusantium officia explicabo repellat quisquam aliquid. Assumenda, ex autem adipisci esse perspiciatis perferendis labore eum! Modi itaque ad expedita magnam exercitationem!</p>
+  </div>
+
+  <ul>Posicionamiento
+    <li>static</li>
+    <li>relative</li>
+    <li>fixed</li>
+    <li>absolute</li>
+    <li>sticky</li>
+  </ul>
+
+  <div class="static">
+    Static
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis mollitia possimus consequuntur nihil. Quod, modi tempora. Deleniti ratione, sint, recusandae explicabo soluta, dignissimos tenetur vitae ea eligendi error numquam earum.
+    </p>
+  </div>
+
+  <div class="relative">
+    relative
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis mollitia possimus consequuntur nihil. Quod, modi tempora. Deleniti ratione, sint, recusandae explicabo soluta, dignissimos tenetur vitae ea eligendi error numquam earum.
+    </p>
+  </div>  
+
+  <div class="fixed">
+    fixed
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis mollitia possimus consequuntur nihil. Quod, modi tempora. Deleniti ratione, sint, recusandae explicabo soluta, dignissimos tenetur vitae ea eligendi error numquam earum.
+    </p>
+  </div> 
+
+  <br><br><br>
+
+  <div class="padre" style="width: 500px; height: 200px; position: relative; border: 3px solid blue;">
+    Div Padre
+    <div class="absolute">
+      absolute
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis mollitia possimus consequuntur nihil. Quod, modi tempora. Deleniti ratione, sint, recusandae explicabo soluta, dignissimos tenetur vitae ea eligendi error numquam earum.
+      </p>
+    </div> 
+  </div>
+
+  <br>
+
+  <div>Primer Elemento de Parrafo</div>
+  <div class="sticky">
+    sticky
+    <p>Lorem ipsum dolor sit amet
+    </p>
+  </div> 
+  <div>Segundo elemento de Parrafo</div>
+  
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
