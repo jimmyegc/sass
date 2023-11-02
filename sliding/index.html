@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sliding</title>
+  <style>
+    html {
+      height: 100%;
+    }
+    body {
+      margin: 0;      
+    }
+    .bg {
+      position: fixed;
+      bottom: 0;
+      left: -50%;
+      right: -50%;
+      top: 0;
+      background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+      z-index: -1;
+      opacity: 0.5;
+      animation: slide 3s ease-in-out infinite alternate;
+    }
+
+    h1 {
+      font-family: monospace;      
+    }
+
+    .content {
+      background-color: rgba(255, 255, 255, 0.4);
+      box-sizing: border-box;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: traslate(-50%, -50%);
+      border-radius: 99em;
+      box-shadow: 0 0 .25em rgba(0, 0, 0, .25);
+      text-align: center;
+      padding: 10vmin;
+    }
+
+    @keyframes slide {
+      0% { 
+        transform: translateX(-25%);
+      }
+      100% {
+        transform: translateX(25%);
+      }
+    }
+
+    .bg2 {
+      animation-duration: 4s;
+      animation-direction: alternate-reverse;
+    }
+
+    .bg3 {
+      animation-duration: 5s;      
+    }
+
+
+  </style>
+</head> 
+<body>
+  <div class="bg"></div>
+  <div class="bg bg2"></div>
+  <div class="bg bg3"></div>
+  <div class="content">
+    <h1>Sliding Diagonals</h1>
+  </div>
+</body>
+</html>
